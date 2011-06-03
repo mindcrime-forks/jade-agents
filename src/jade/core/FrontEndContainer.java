@@ -283,13 +283,12 @@ class FrontEndContainer implements FrontEnd, AgentToolkit, Runnable {
 		}
 	}
 	
-//	/**
-//	 Request the FrontEnd container to create a new agent.
-//	 @param name The name of the new agent.
-//	 @param className The class of the new agent.
-//	 @param args The arguments to be passed to the new agent.
-//	 */
-	/*#ANDROID_INCLUDE_BEGIN
+	/**
+	 Request the FrontEnd container to create a new agent.
+	 @param name The name of the new agent.
+	 @param className The class of the new agent.
+	 @param args The arguments to be passed to the new agent.
+	 */
 	public final void createAgent(String name, String className, Object[] args) throws IMTPException {
 		try {
 			Agent a = initAgentInstance(name, className, args);
@@ -302,7 +301,6 @@ class FrontEndContainer implements FrontEnd, AgentToolkit, Runnable {
 			throw new IMTPException(msg, e);
 		}
 	}
-	#ANDROID_INCLUDE_END*/
 
 	/**
 	 Request the FrontEnd container to kill an agent.
