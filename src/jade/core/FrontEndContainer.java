@@ -283,6 +283,27 @@ class FrontEndContainer implements FrontEnd, AgentToolkit, Runnable {
 		}
 	}
 	
+//	/**
+//	 Request the FrontEnd container to create a new agent.
+//	 @param name The name of the new agent.
+//	 @param className The class of the new agent.
+//	 @param args The arguments to be passed to the new agent.
+//	 */
+	/*#ANDROID_INCLUDE_BEGIN
+	public final void createAgent(String name, String className, Object[] args) throws IMTPException {
+		try {
+			Agent a = initAgentInstance(name, className, args);
+			String newName = myBackEnd.bornAgent(name);
+			activateAgent(newName, a);
+		}
+		catch (Exception e) {
+			String msg = "Exception creating new agent. ";
+			logger.log(Logger.SEVERE,msg+e);
+			throw new IMTPException(msg, e);
+		}
+	}
+	#ANDROID_INCLUDE_END*/
+
 	/**
 	 Request the FrontEnd container to kill an agent.
 	 @param name The name of the agent to kill.
