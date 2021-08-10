@@ -1,4 +1,4 @@
-# jade
+# Jade - https://jade-project.gitlab.io/
 
 Java Agent Development Framework source code.
 
@@ -7,4 +7,4 @@ We cannot thank them enough for the contribution they have made to the field of 
 
 All contribution are welcome.
 
-See website for more details.
+See the [website](https://jade-project.gitlab.io/) for more details.
