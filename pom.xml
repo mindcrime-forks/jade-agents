@@ -11,7 +11,7 @@
 	<url>https://jitpack.io/#jade-project/jade/4.5.3</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.test.skip>true</maven.test.skip>
+		<maven.test.skip>true</maven.test.skip>
 	</properties>
 
 	<dependencies>
@@ -53,11 +53,16 @@
 			<version>4.2.4</version>
 		</dependency>
 
-		
+
 
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java/jade/gui/images</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -67,11 +72,11 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<excludes>
-                    	<exclude>**/examples/JadeJessProtege/*.java</exclude>
-                    	<exclude>**/examples/jess/*.java</exclude>
-                	</excludes>
-            
-					
+						<exclude>**/examples/JadeJessProtege/*.java</exclude>
+						<exclude>**/examples/jess/*.java</exclude>
+					</excludes>
+
+
 				</configuration>
 			</plugin>
 
@@ -94,10 +99,10 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>3.3.0</version>
 				<configuration>
-				 <doclint>none</doclint>
+					<doclint>none</doclint>
 					<excludePackageNames>
-                    	examples.JadeJessProtege:examples.jess
-                	</excludePackageNames>	
+						examples.JadeJessProtege:examples.jess
+					</excludePackageNames>
 				</configuration>
 				<executions>
 					<execution>
