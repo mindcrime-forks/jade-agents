@@ -67,6 +67,9 @@
 				</includes>
 				<targetPath>jade/gui/images</targetPath>
 			</resource>
+			<resource>
+				<directory>src/main/java/jade/gui/images</directory>
+			</resource>
 		</resources>
 		<plugins>
 			<plugin>
