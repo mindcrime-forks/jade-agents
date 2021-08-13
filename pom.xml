@@ -61,6 +61,10 @@
 		<resources>
 			<resource>
 				<directory>src/main/java/jade/gui/images</directory>
+				<includes>
+					<include>**/*.gif</include>
+					<include>**/*.jpg</include>
+				</includes>
 			</resource>
 		</resources>
 		<plugins>

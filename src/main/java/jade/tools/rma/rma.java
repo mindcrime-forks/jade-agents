@@ -29,26 +29,30 @@ import java.net.UnknownHostException;
 import java.io.InputStreamReader;
 
 import java.util.Map;
+import jade.util.leap.Iterator;
+import java.net.URL;
+import jade.util.Logger;
 
-import jade.content.onto.basic.Action;
-import jade.content.onto.basic.Result;
 import jade.core.*;
 import jade.core.behaviours.*;
-import jade.domain.FIPANames;
+
 import jade.domain.FIPAAgentManagement.*;
 import jade.domain.JADEAgentManagement.*;
 import jade.domain.introspection.*;
-import jade.domain.mobility.*;
 import jade.domain.persistence.*;
+import jade.domain.mobility.*;
+import jade.domain.FIPANames;
 import jade.gui.AgentTreeModel;
-import jade.lang.acl.ACLMessage;
-import jade.proto.SimpleAchieveREInitiator;
-import jade.security.JADEPrincipal;
-import jade.tools.ToolAgent;
-import jade.util.Logger;
-import jade.util.leap.Iterator;
 
-import java.net.URL;
+import jade.lang.acl.ACLMessage;
+
+import jade.content.onto.basic.Result;
+import jade.content.onto.basic.Action;
+
+import jade.proto.SimpleAchieveREInitiator;
+
+import jade.tools.ToolAgent;
+import jade.security.JADEPrincipal;
 
 
 /**
