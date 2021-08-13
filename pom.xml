@@ -65,6 +65,7 @@
 					<include>**/*.gif</include>
 					<include>**/*.jpg</include>
 				</includes>
+				<targetPath>jade/gui/images</targetPath>
 			</resource>
 		</resources>
 		<plugins>
