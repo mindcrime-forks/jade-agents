@@ -64,6 +64,34 @@
 				<directory>src/main/java/jade/tools/rma/images</directory>
 				<targetPath>jade/tools/rma/images</targetPath>
 			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/dfgui/images</directory>
+				<targetPath>jade/tools/dfgui/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/DummyAgent/images</directory>
+				<targetPath>jade/tools/DummyAgent/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/introspector/gui/images</directory>
+				<targetPath>jade/tools/introspector/gui/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/logging/images</directory>
+				<targetPath>jade/tools/logging/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/logging/gui/images</directory>
+				<targetPath>jade/tools/logging/gui/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/sniffer/images</directory>
+				<targetPath>jade/tools/sniffer/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/testagent/images</directory>
+				<targetPath>jade/tools/testagent/images</targetPath>
+			</resource>
 		</resources>
 		<plugins>
 			<plugin>
