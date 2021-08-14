@@ -52,23 +52,17 @@
 			<artifactId>glassfish-corba-orb</artifactId>
 			<version>4.2.4</version>
 		</dependency>
-
-
-
-	</dependencies>
+</dependencies>
 
 	<build>
 		<resources>
 			<resource>
 				<directory>src/main/java/jade/gui/images</directory>
-				<includes>
-					<include>**/*.gif</include>
-					<include>**/*.jpg</include>
-				</includes>
 				<targetPath>jade/gui/images</targetPath>
 			</resource>
 			<resource>
-				<directory>src/main/java/jade/gui/images</directory>
+				<directory>src/main/java/jade/tools/rma/images</directory>
+				<targetPath>jade/tools/rma/images</targetPath>
 			</resource>
 		</resources>
 		<plugins>
@@ -80,11 +74,9 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<excludes>
-						<exclude>**/examples/JadeJessProtege/*.java</exclude>
-						<exclude>**/examples/jess/*.java</exclude>
+						<exclude>**/examples/**</exclude>
+						<exclude>**/demo/**</exclude>
 					</excludes>
-
-
 				</configuration>
 			</plugin>
 
@@ -108,6 +100,7 @@
 				<version>3.3.0</version>
 				<configuration>
 					<doclint>none</doclint>
+					<source>8</source>
 					<excludePackageNames>
 						examples.JadeJessProtege:examples.jess
 					</excludePackageNames>
