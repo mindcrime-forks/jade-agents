@@ -52,15 +52,45 @@
 			<artifactId>glassfish-corba-orb</artifactId>
 			<version>4.2.4</version>
 		</dependency>
-
-
-
-	</dependencies>
+</dependencies>
 
 	<build>
 		<resources>
 			<resource>
 				<directory>src/main/java/jade/gui/images</directory>
+				<targetPath>jade/gui/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/rma/images</directory>
+				<targetPath>jade/tools/rma/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/dfgui/images</directory>
+				<targetPath>jade/tools/dfgui/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/DummyAgent/images</directory>
+				<targetPath>jade/tools/DummyAgent/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/introspector/gui/images</directory>
+				<targetPath>jade/tools/introspector/gui/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/logging/images</directory>
+				<targetPath>jade/tools/logging/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/logging/gui/images</directory>
+				<targetPath>jade/tools/logging/gui/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/sniffer/images</directory>
+				<targetPath>jade/tools/sniffer/images</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/java/jade/tools/testagent/images</directory>
+				<targetPath>jade/tools/testagent/images</targetPath>
 			</resource>
 		</resources>
 		<plugins>
@@ -72,11 +102,9 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<excludes>
-						<exclude>**/examples/JadeJessProtege/*.java</exclude>
-						<exclude>**/examples/jess/*.java</exclude>
+						<exclude>**/examples/**</exclude>
+						<exclude>**/demo/**</exclude>
 					</excludes>
-
-
 				</configuration>
 			</plugin>
 
@@ -100,6 +128,7 @@
 				<version>3.3.0</version>
 				<configuration>
 					<doclint>none</doclint>
+					<source>8</source>
 					<excludePackageNames>
 						examples.JadeJessProtege:examples.jess
 					</excludePackageNames>
