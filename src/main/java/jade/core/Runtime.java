@@ -318,7 +318,7 @@ public class Runtime {
 	 * Return a String with copyright Notice, Name and Version of this version of JADE
 	 */
 	public static String getCopyrightNotice() {
-		return("    This is "+getVersionInfo()+"\n    downloaded in Open Source, under LGPL restrictions,\n    at http://jade.tilab.com/\n");
+		return("    This is "+getVersionInfo()+"\n    downloaded in Open Source, under LGPL restrictions,\n at https://jade-project.gitlab.io/ \n");
 	}
 	//#APIDOC_EXCLUDE_END
 

@@ -8,10 +8,19 @@
 	<name>Jade</name>
 	<packaging>jar</packaging>
 
-	<url>https://jitpack.io/#jade-project/jade/4.5.3</url>
+	<url>jade-project.gitlab.io/</url>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.test.skip>true</maven.test.skip>
+		<glassfish.version>4.2.4</glassfish.version>
+		<commons.version>1.15</commons.version>
+		<junit.version>4.13.2</junit.version>
+		<jcalendar.version>1.4</jcalendar.version>
+		<glassfishcorbaorb.version>4.2.4</glassfishcorbaorb.version>
+		<maven-compiler.version>3.12.1</maven-compiler.version>
+		<maven-source.version>3.2.1</maven-source.version>
+		<maven-javadoc.version>3.3.0</maven-javadoc.version>
+		<maven.test.skip>true</maven.test.skip>	
 	</properties>
 
 	<dependencies>
@@ -19,21 +28,21 @@
 		<dependency>
 			<groupId>org.glassfish.corba</groupId>
 			<artifactId>glassfish-corba-omgapi</artifactId>
-			<version>4.2.4</version>
+			<version>${glassfish.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
-			<version>1.15</version>
+			<version>${commons.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -42,7 +51,7 @@
 		<dependency>
 			<groupId>com.toedter</groupId>
 			<artifactId>jcalendar</artifactId>
-			<version>1.4</version>
+			<version>${jcalendar.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.glassfish.corba/glassfish-corba-orb 
@@ -50,7 +59,7 @@
 		<dependency>
 			<groupId>org.glassfish.corba</groupId>
 			<artifactId>glassfish-corba-orb</artifactId>
-			<version>4.2.4</version>
+			<version>${glassfishcorbaorb.version}</version>
 		</dependency>
 </dependencies>
 
@@ -97,7 +106,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>${maven-compiler.version}</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -111,7 +120,7 @@
 			<plugin>  <!-- Create sources.jar -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.2.1</version>
+				<version>${maven-source.version}</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -125,7 +134,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.3.0</version>
+				<version>${maven-javadoc.version}</version>
 				<configuration>
 					<doclint>none</doclint>
 					<source>8</source>
